@@ -25,7 +25,7 @@ int wmain(int argc, wchar_t* argv[])
 
 		GetFullPathName(argv[2], _countof(wszVehicleFile), wszVehicleFile, NULL);
 		GetFullPathName(argv[3], _countof(wszPayloadFile), wszPayloadFile, NULL);
-		ExtractEncryptedResource(wszVehicleFile, wszPayloadFile, pwszResourceType, argv[4], pEncKey, dwEncKeyLen);
+		ExtractEncryptedResource(wszVehicleFile, wszPayloadFile, pwszResourceType, argv[4]);
 
 	}
 	else {
